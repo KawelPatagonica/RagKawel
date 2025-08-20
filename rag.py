@@ -1,4 +1,3 @@
-
 import os
 from pypdf import PdfReader
 import faiss
@@ -10,7 +9,7 @@ os.environ['HF_HOME'] = r"D:\Kawel Patagonica\huggingface_cache"
 # 1. Leer PDF
 # Modifica esta función para que reciba la ruta de una carpeta
 def leer_pdfs_en_carpeta(ruta_carpeta):
-     """
+    """
     Lee todos los archivos PDF en una carpeta y extrae su texto.
 
     Args:
@@ -20,7 +19,6 @@ def leer_pdfs_en_carpeta(ruta_carpeta):
         str: Un solo texto que contiene el contenido de todos los PDFs.
     """
     texto_total = ""
-    texto_total = ""  # Variable para acumular el texto de todos los PDFs
     
     # 1.1. Itera sobre los archivos de la carpeta
     for nombre_archivo in os.listdir(ruta_carpeta):
@@ -39,7 +37,7 @@ def leer_pdfs_en_carpeta(ruta_carpeta):
 
 # 2. Crear embeddings y FAISS index
 def crear_index(texto, model):
-      """
+    """
     Crea un índice FAISS a partir de un texto para búsquedas eficientes.
 
     Args:
