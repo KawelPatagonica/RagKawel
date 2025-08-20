@@ -1,6 +1,9 @@
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+.. automodule:: rag
+   :members:
+
 
    rag_code
 
